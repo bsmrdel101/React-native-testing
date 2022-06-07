@@ -1,13 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 
 import CustomButton from '../components/CustomButton';
 
 
 const styles = StyleSheet.create({
-    button: {
-        color: '#841584'
-    },
+    title: {
+        fontSize: '80px',
+        textAlign: 'center',
+        marginBottom: '120px',
+        marginTop: '120px',
+    }
 })
 
 export default function Home({ navigation }) {
@@ -18,8 +21,7 @@ export default function Home({ navigation }) {
 
     return (
         <View>
-            <Text>Home screen</Text>
-            <Button onPress={() => changePage('Supplies')} title='Get Started' style={styles.button} />
+            <Text style={styles.title}>Supply Tracker</Text>
             <CustomButton onPress={() => changePage('Supplies')} title='Get Started' />
         </View>
     );

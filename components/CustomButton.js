@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, Pressable } from 'react-native';
+import { Text, StyleSheet, Pressable } from 'react-native';
 
 
 const styles = StyleSheet.create({
@@ -11,6 +11,8 @@ const styles = StyleSheet.create({
       borderRadius: 4,
       elevation: 3,
       backgroundColor: '#841584',
+      marginLeft: '30px',
+      marginRight: '30px',
     },
     text: {
       fontSize: 16,
