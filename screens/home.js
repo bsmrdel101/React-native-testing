@@ -1,8 +1,14 @@
 import React from 'react';
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function home() {
+
+const styles = StyleSheet.create({
+    title: {
+        textAlign: 'center'
+    },
+})
+
+export default function Home() {
     return (
         <View>
             <Text>Home screen</Text>
