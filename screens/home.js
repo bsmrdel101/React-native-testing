@@ -1,6 +1,8 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
+import CustomButton from '../components/CustomButton';
+
 
 const styles = StyleSheet.create({
     button: {
@@ -17,7 +19,8 @@ export default function Home({ navigation }) {
     return (
         <View>
             <Text>Home screen</Text>
-            <Button onPress={() => changePage('Supplies')} title='Learn More' style={styles.button} />
+            <Button onPress={() => changePage('Supplies')} title='Get Started' style={styles.button} />
+            <CustomButton onPress={() => changePage('Supplies')} title='Get Started' />
         </View>
     );
 }
